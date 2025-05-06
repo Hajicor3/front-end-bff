@@ -1,0 +1,31 @@
+.card_container {
+    padding: 1em;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 0.5%;
+    width: 24%;
+}
+
+.card_container h4 {
+    color: #ffbb33;
+    background-color: #222;
+    border-radius: 10px;
+    padding: .4em;
+    margin-bottom: 1.3em;
+    font-size: 1.3em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_container a {
+    text-decoration: none;
+}
+
+.card_container p {
+    color: #7a7A7A;
+    margin-bottom: 1em;
+}
+
+.card_container p span {
+    font-weight: bolder;
+}

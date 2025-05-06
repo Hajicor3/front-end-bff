@@ -1,0 +1,18 @@
+.novofornecedor_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    margin-top: 5em;
+    width: 100%;
+    background-color: #e3e3e382;
+}
+
+.novofornecedor_container h1 {
+    margin-bottom: .5em;
+}
+
+.novofornecedor_container > p {
+    color: #7b7b7b;
+}

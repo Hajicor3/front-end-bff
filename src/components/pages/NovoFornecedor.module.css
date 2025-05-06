@@ -1,0 +1,13 @@
+.novofornecedor_container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.novofornecedor_container h1 {
+    margin-bottom: .5em;
+}
+
+.novofornecedor_container > p {
+    color: #7b7b7b;
+}

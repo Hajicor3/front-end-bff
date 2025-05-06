@@ -1,0 +1,28 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2em;
+}
+
+.container h1 {
+    font-size: 3em;
+    margin-bottom: .2em;
+    border-bottom: 2px solid #000;
+}
+.container h1 span {
+    background-color: #222;
+    color: #ffbb33;
+}
+.container p {
+    color: #7e7e7e;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.container img {
+    width: 95%;
+}

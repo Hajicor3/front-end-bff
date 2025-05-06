@@ -1,0 +1,16 @@
+.btn_container {
+    padding: .6em;
+    margin: .7em;
+    background-color: #222;
+}
+
+.btn_container a {
+    padding: 2em;
+    text-decoration: none;
+    color: #fff;
+    transition: .6s;
+}
+
+.btn_container a:hover {
+    color: #ffbb33;
+}
