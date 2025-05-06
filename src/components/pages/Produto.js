@@ -10,7 +10,7 @@ function Produto() {
     const[produto, setProduto] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:8084/produto/${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/produto/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ function Produto() {
 
     function salvarEdicao(produto) {
      
-        fetch(`http://localhost:8084/produto/${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/produto/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

@@ -20,7 +20,7 @@ function Fornecedores() {
 
     useEffect(() => {
         
-        fetch("http://localhost:8084/fornecedores", {
+        fetch(`${process.env.REACT_APP_API_URL}/fornecedores`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ function Fornecedores() {
     },[])
 
     function removerFornecedor(id) {
-        fetch(`http://localhost:8084/fornecedor/${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/fornecedor/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

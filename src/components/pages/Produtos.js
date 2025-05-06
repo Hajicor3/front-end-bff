@@ -9,7 +9,7 @@ const[produtos, setProdutos] = useState([])
 const[removeLoading, setRemoveLoading] = useState(false)
 
     useEffect(() => {
-        fetch('http://localhost:8084/produtos', {
+        fetch(`${process.env.REACT_APP_API_URL}/produtos`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

@@ -12,7 +12,7 @@ function NovoFornecedor() {
             return 0
         }
 
-        fetch('http://localhost:8084/fornecedor', {
+        fetch(`${process.env.REACT_APP_API_URL}/fornecedor`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

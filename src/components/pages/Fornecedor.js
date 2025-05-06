@@ -17,7 +17,7 @@ function Fornecedor() {
     const[showProdutoForm, setShowProdutoForm] = useState(false)
 
     useEffect(() => {
-        fetch(`http://localhost:8084/fornecedor/${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/fornecedor/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ function Fornecedor() {
 
         setMessage('')
 
-        fetch(`http://localhost:8084/fornecedor/${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/fornecedor/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ function Fornecedor() {
 
     function salvarProduto(produto) {
         
-        fetch('http://localhost:8084/produto', {
+        fetch(`${process.env.REACT_APP_API_URL}/produto`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ function Fornecedor() {
     }
 
     function deletarProduto(id) {
-        fetch(`http://localhost:8084/produto/${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/produto/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
