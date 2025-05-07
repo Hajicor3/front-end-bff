@@ -1,11 +1,6 @@
 .novofornecedor_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding: 1em;
     margin-top: 5em;
-    width: 100%;
     background-color: #e3e3e382;
 }
 
@@ -15,4 +10,12 @@
 
 .novofornecedor_container > p {
     color: #7b7b7b;
+}
+
+.movimentacao_container {
+    border-top: 2px solid #000;
+}
+
+.movimentacao_container h1 {
+    margin-top: .5em;
 }
