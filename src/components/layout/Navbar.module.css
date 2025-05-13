@@ -6,14 +6,15 @@
 }
 
 .navbar_container img {
-    height: 70px;
-    width: 70px;
+    height: 75px;
+    width: 75px;
 }
 
 .list {
     display: flex;
     list-style: none;
     align-items: center;
+    
 }
 
 .item {
@@ -26,6 +27,17 @@
     font-weight: bold;
 }
 
-.item a:hover {
-    color: #ffbb33;
+.item a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #ffbb33;
+    transition: width 0.3s;
+    width: 0%;
 }
+
+.item a:hover::after {
+    color: #ffbb33;
+    width: 100%;
+}
+

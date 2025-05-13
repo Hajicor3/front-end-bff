@@ -9,6 +9,7 @@ import Fornecedores from './components/pages/Fornecedores';
 import Fornecedor from './components/pages/Fornecedor';
 import NovoFornecedor from './components/pages/NovoFornecedor';
 import Produto from './components/pages/Produto';
+import LoginOrRegister from './components/pages/LoginOrRegister';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path='/fornecedor/:id' element={<Fornecedor />} />
             <Route path='/novofornecedor' element={<NovoFornecedor />} />
             <Route path='/produto/:id' element={<Produto />} />
+            <Route path='/login-ou-registro' element={<LoginOrRegister />} />
           </Routes>
         </Container>
       </Router>

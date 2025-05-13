@@ -107,7 +107,7 @@ function Fornecedor() {
                                 </div>
                                 )}
                         </div>
-                        <div>
+                        <div className={styles.produto_container}>
                             <h2>Adicionar um produto</h2>
                             <button onClick={switchButtonProduto} className={styles.btn} >
                             {!showProdutoForm ? 'Adicionar produto' : 'Fechar'}

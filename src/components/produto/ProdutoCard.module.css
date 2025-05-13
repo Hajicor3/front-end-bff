@@ -1,6 +1,7 @@
 .card_container {
     padding: 1em;
     border: 1px solid #000;
+    backdrop-filter: blur(35px);
     border-radius: 5px;
     margin: 0.5%;
     width: 24%;
@@ -17,7 +18,7 @@
 }
 
 .card_container p {
-    color: #7a7A7A;
+    color: #7a7a7a;
     margin-bottom: 1em;
 }
 
